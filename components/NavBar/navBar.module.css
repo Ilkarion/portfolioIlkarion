@@ -1,0 +1,16 @@
+.specialPurpleText {
+
+    -webkit-text-stroke: #8625E7;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: rgba(134, 37, 231, 0.10);
+
+}
+
+.bgBlurNav {
+    
+    border: #8625E7 1px solid;
+    border-radius: 100px;
+    background: rgba(134, 37, 231, 0.10);
+    backdrop-filter: blur(5px);
+
+}

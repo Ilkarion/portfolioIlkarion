@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  padding: 26px 120px 25px 120px;
+  @media(max-width:610px) { padding: 13px 60px 13px 60px;}
+  @media(max-width:370px) { padding: 5px 10px 5px 10px;}
+}
 
 body {
   background: #191919;
-  font-family: 'Encode Sans', sans-serif;
+  font-family: monospace !important;
 }
