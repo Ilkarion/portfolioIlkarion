@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 html {
-  padding: 26px 120px 25px 120px;
-  @media(max-width:610px) { padding: 13px 60px 13px 60px;}
-  @media(max-width:370px) { padding: 5px 10px 5px 10px;}
+  padding: 0px 120px 25px 120px;
+  @media(max-width:610px) { padding: 0px 60px 13px 60px;}
+  @media(max-width:370px) { padding: 0px 10px 5px 10px;}
 }
 
 body {

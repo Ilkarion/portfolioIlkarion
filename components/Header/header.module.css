@@ -2,3 +2,16 @@
     color: #8625E726;
     -webkit-text-stroke: #8625E7 1px;
 }
+
+.gradientH {
+    background: radial-gradient(51.47% 50.12% at 50% 50%, #543473 0%, rgba(25, 25, 25, 0.00) 100%);
+}
+
+.imgObjectH {
+    object-fit: cover;
+
+    @media(min-width:280px){ object-position: 0px -85px; }
+    @media(min-width:320px){ object-position: 0px -125px; }
+    @media(min-width:930px){ object-position: 0px -40px; }
+    
+}

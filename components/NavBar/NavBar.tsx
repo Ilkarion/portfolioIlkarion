@@ -45,15 +45,15 @@ export default function NavBar() {
     min-[730px]:pt-[10px]
     `
     return(
-        <div className='w-ful sticky z-10 flex flex-row justify-between items-center'>
-            <div className={`${stl.specialPurpleText} ${styleNavPurple}`}>LARIN</div>
-            <div className={`flex flex-row items-center min-[280px]:gap-[24px] min-[730px]:gap-[76px] ${styleNavBlur} ${stl.bgBlurNav}`}>
-                <Link href="https://github.com/Ilkarion" target='_blank'><Image src={gitHubHover ? gitHubPurple : gitHub} alt="logo-gitHub" onMouseEnter={() => setGitHubHover(true)} onMouseLeave={()=>setGitHubHover(false)} className={`${imgStyle} hover:cursor-pointer`}/></Link>
-                {copied ? <span className='text-[20px] text-[white]'>copied</span> : (<Image src={gmailHover ? gmailColor : gmailWhite} alt="logo-gitHub" onMouseEnter={() => setGmailHover(true)} onMouseLeave={() => setGmailHover(false)} className={`${imgStyle} hover:cursor-pointer`} onClick={copyCopy}/>)}
-                <span className='text-[#C4C4C4] min-[280px]:text-[23px] min-[730px]:text-[30px] hover:cursor-pointer hover:text-[#8625E7]'>Pf</span>
+            <div className='w-full pt-[20px] sticky top-0 z-10 flex flex-row justify-between items-center'>
+                <div className={`${stl.specialPurpleText} ${styleNavPurple}`}>LARIN</div>
+                <div className={`flex flex-row items-center min-[280px]:gap-[24px] min-[730px]:gap-[76px] ${styleNavBlur} ${stl.bgBlurNav}`}>
+                    <Link href="https://github.com/Ilkarion" target='_blank'><Image src={gitHubHover ? gitHubPurple : gitHub} alt="logo-gitHub" onMouseEnter={() => setGitHubHover(true)} onMouseLeave={()=>setGitHubHover(false)} className={`${imgStyle} hover:cursor-pointer`}/></Link>
+                    {copied ? <span className='text-[20px] text-[white]'>copied</span> : (<Image src={gmailHover ? gmailColor : gmailWhite} alt="logo-gitHub" onMouseEnter={() => setGmailHover(true)} onMouseLeave={() => setGmailHover(false)} className={`${imgStyle} hover:cursor-pointer`} onClick={copyCopy}/>)}
+                    <span className='text-[#C4C4C4] min-[280px]:text-[23px] min-[730px]:text-[30px] hover:cursor-pointer hover:text-[#8625E7]'>Pf</span>
+                </div>
+                <div className={`${stl.specialPurpleText} ${styleNavPurple} max-[410px]:hidden`}>UP</div>
             </div>
-            <div className={`${stl.specialPurpleText} ${styleNavPurple} max-[410px]:hidden`}>UP</div>
-        </div>
     )
 };
 
