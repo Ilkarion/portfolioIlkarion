@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header'
 import NavBar from '@/components/NavBar/NavBar'
+import Skills from '@/components/Skills/Skills'
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <NavBar />
       <Header />
+      <Skills />
     </>
   )
 }

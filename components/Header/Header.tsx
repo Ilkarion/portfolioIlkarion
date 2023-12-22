@@ -5,8 +5,9 @@ import me from "../../assets/Header/me.jpg"
 export default function Header() {
     const textStl = `
     font-semibold
-    min-[280px]:text-[58px]
-    min-[730px]:text-[110px]
+    min-[280px]:text-[45px]
+    min-[412px]:text-[54px]
+    min-[730px]:text-[91px]
     min-[280px]:tracking-[1.16px]
     min-[730px]:tracking-[3.3px]
     `
@@ -24,7 +25,7 @@ export default function Header() {
         min-[730px]:rounded-[50px]
     `
     const describtionMeSt = `
-    min-[730px]:w-[537px]
+    min-[730px]:w-[489px]
 
     min-[280px]:text-[14px]
     min-[730px]:text-[16px]
@@ -45,7 +46,7 @@ export default function Header() {
                 <div className="w-[1px] h-[97px] bg-[#8625E7] rotate-[145deg] max-[730px]:h-[50px] max-[600px]:hidden mx-auto"></div>
                 <p className={`${textStl} text-right ${stl.purpleSpecialText}`}>DEVELOPER</p>
             </h1>
-            <div className={`${stl.gradientH} z-[-10] absolute top-[350px] left-[-80px] w-[80%] min-[280px]:h-[431px] min-[730px]:h-[1045px] rotate-[-45deg]`}></div>
+            <div className={`${stl.gradientH} z-[-10] absolute top-[350px] left-[-80px] w-[80%] min-[280px]:h-[431px] min-[730px]:h-[830px] rotate-[-45deg]`}></div>
             <div className="flex min-[280px]:flex-col min-[930px]:flex-row min-[280px]:gap-[20px] min-[930px]:gap-[112px] items-center mt-[145px]">
                 <div className="flex flex-col">
                     <Image src={me} alt="myPhoto" className={`${imgSt} ${stl.imgObjectH}`}/>
