@@ -1,7 +1,7 @@
-import underwatch from "../../assets/projs/underwatch.png"
-
-import Image from "next/image";
-export default function Card() {
+import Link from 'next/link';
+import stl from './examples.module.css'
+import Image, { StaticImageData } from "next/image";
+export default function Card({imageC, header, desc, techs, linkGit, linkLook}:{imageC:StaticImageData, header:string, desc:string, techs:string[], linkGit:string, linkLook:string}) {
     const imgSizing = `
     min-[280px]:w-[250px]
     min-[280px]:h-[90px]
@@ -53,17 +53,22 @@ export default function Card() {
     text-[#DBDBDB]
     `
     return(
-        <>
+        <div className='relative'>
+            <div className={stl.purpleGradientE}></div>
             <div className={card}>
                 <div className="flex flex-col items-center gap-[24px]">
-                    <Image src={underwatch} alt="underwatch Project" className={imgSizing}/>
-                    <span className={nameProject}>Underwatch</span>
+                    <Link href={linkLook} target='_blank'><Image src={imageC} alt="underwatch Project" className={imgSizing}/></Link>
+                    <span className={nameProject}>{header}</span>
                 </div>
-                <p className={describtion}>This project was commissioned by a client in Discord social media. He needed in promote his company to help other people win in games and get rewards</p>
+                <p className={describtion}>{desc}</p>
                 <div className="mt-[24px] flex flex-row flex-wrap justify-center w-full gap-2">
-                    <span className={technoS}>Technology</span>
+                    {techs.map((tech, index)=><span key={index} className={technoS}>{tech}</span>)}
+                </div>
+                <div className="flex flex-row justify-between mt-6">
+                    <Link href={linkGit} target='_blank' className='text-[18px] text-[#D9D9D9] underline'>GitHub</Link>
+                    <Link href={linkLook} target='_blank' className='text-[18px] text-[#D9D9D9] underline'>Take a look</Link>
                 </div>
             </div>
-        </>
+        </div>
     )
 };

@@ -1,0 +1,10 @@
+.purpleGradientE {
+    position: absolute;
+    z-index: -10;
+    top: -100px;
+    transform: rotate(45deg);
+    right: 0px;
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(51.47% 50.12% at 50% 50%, rgba(84, 52, 115, 0.30) 0%, rgba(25, 25, 25, 0.00) 100%);
+}
