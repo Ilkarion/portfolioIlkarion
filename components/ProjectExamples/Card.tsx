@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import stl from './examples.module.css'
 import Image, { StaticImageData } from "next/image";
 export default function Card({imageC, header, desc, techs, linkGit, linkLook}:{imageC:StaticImageData, header:string, desc:string, techs:string[], linkGit:string, linkLook:string}) {
     const imgSizing = `
@@ -54,7 +53,6 @@ export default function Card({imageC, header, desc, techs, linkGit, linkLook}:{i
     `
     return(
         <div className='relative'>
-            <div className={stl.purpleGradientE}></div>
             <div className={card}>
                 <div className="flex flex-col items-center gap-[24px]">
                     <Link href={linkLook} target='_blank'><Image src={imageC} alt="underwatch Project" className={imgSizing}/></Link>

@@ -8,3 +8,6 @@
     height: 400px;
     background: radial-gradient(51.47% 50.12% at 50% 50%, rgba(84, 52, 115, 0.30) 0%, rgba(25, 25, 25, 0.00) 100%);
 }
+@media(max-width: 390px) {
+    .purpleGradientE { height: 100px; right: 10px; width: 268px;}
+}
