@@ -1,0 +1,12 @@
+.specialWhiteG {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #C4C4C4;
+    color: transparent;
+}
+
+@media(max-width:600px) {
+    .specialWhiteG {
+        -webkit-text-stroke-color: #8625E7;
+        text-shadow:  0px 4px 10px #8625E7;
+    }
+}

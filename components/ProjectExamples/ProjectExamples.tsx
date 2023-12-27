@@ -8,7 +8,7 @@ export default function ProjectExamples() {
     return(
         <>
             <h2 className="text-[50px] text-center text-[#FFFFFF] mt-[80px] mb-[50px]">Projects Examples</h2>
-            <div className="relative flex flex-row flex-wrap justify-around items-center gap-[40px]">
+            <div className="relative flex flex-row flex-wrap justify-around items-center gap-[50px]">
                 <div className={stl.purpleGradientE}></div>
                 <Card imageC={underwatch} header={"Underwatch"}
                 desc={"Client's Discord project: Promoting gaming success and rewards for his company. "}

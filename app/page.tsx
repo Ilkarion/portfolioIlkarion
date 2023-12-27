@@ -1,3 +1,4 @@
+import GetInTouch from '@/components/GeiInTouch/GetInTouch'
 import Header from '@/components/Header/Header'
 import NavBar from '@/components/NavBar/NavBar'
 import ProjectExamples from '@/components/ProjectExamples/ProjectExamples'
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Skills />
       <ProjectExamples />
+      <GetInTouch />
     </>
   )
 }

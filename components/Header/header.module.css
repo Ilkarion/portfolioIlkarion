@@ -8,10 +8,8 @@
 }
 
 .imgObjectH {
-    object-fit: cover;
+height: auto;
 
-    @media(min-width:280px){ object-position: 0px -85px; }
-    @media(min-width:320px){ object-position: 0px -125px; }
-    @media(min-width:930px){ object-position: 0px -40px; }
+   
     
 }

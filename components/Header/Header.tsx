@@ -13,14 +13,8 @@ export default function Header() {
     `
     const imgSt = `
         min-[280px]:w-[328px]
-        min-[280px]:h-[349px]
-
-        min-[930px]:h-[284px]
         min-[930px]:w-[217px]
-
         min-[1190px]:w-[330px]
-        min-[1190px]:h-[427px]
-
         min-[280px]:rounded-[22px]
         min-[730px]:rounded-[50px]
     `
