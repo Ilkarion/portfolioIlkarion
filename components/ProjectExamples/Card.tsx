@@ -52,7 +52,7 @@ export default function Card({imageC, header, desc, techs, linkGit, linkLook}:{i
     text-[#DBDBDB]
     `
     return(
-        <div className='relative'>
+        <div className='relative z-[-1]'>
             <div className={card}>
                 <div className="flex flex-col items-center gap-[24px]">
                     <Link href={linkLook} target='_blank'><Image src={imageC} alt="underwatch Project" className={imgSizing}/></Link>

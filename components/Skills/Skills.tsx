@@ -2,62 +2,150 @@ import Skill from "./Skill"
 
 interface skillsData {
     name: string;
-    describtion: string;
+    describtion: string[];
 }
 export default function Skills() {
     const dataSkills: skillsData[] = [
         {
             name: "HTML",
-            describtion: "to provide structure to a webpage and make it accessible to users"
+            describtion: [
+                "Elements",
+                "Attributes",
+                "Inline-styles",
+                "Images",
+                "Forms",
+                "Classes, id, tags",
+                "Graphics(Canvas)",
+                "SEO"
+            ]
         },
         {
             name: "CSS",
-            describtion: "to define styles for your web pages, including the design, layout and variations in display for different devices"
+            describtion: [
+                "Syntax",
+                "Selectors",
+                "FlexBox, Grid",
+                "Animation",
+                "Variables",
+                "Responsive",
+                "Inheritance",
+            ]
         },
         {
             name: "JAVA SCRIPT",
-            describtion: "to make web pages interactive"
+            describtion: [
+                "Loops, Variables, Functions, classes",
+                "JSON",
+                "Prototype",
+                "CallBacks",
+                "Closures",
+                "Asynchronous",
+                "Promises",
+                "Asynk, Await",
+                "Libraries",
+            ]
         },
         {
             name: "REACT",
-            describtion: "to build any kind of applications, making it a versatile framework for cross-platform development"
+            describtion: [
+                ".map(), .filter(), .reduce(), .sort()",
+                "Components, Props, JSX, TSX",
+                "Asynchronus JS",
+                "Hooks",
+                "States",
+                "Events",
+                "Routing",
+            ]
         },
         {
             name: "SASS",
-            describtion: "to use variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff"
+            describtion: [
+                "Variables",
+                "Mixins",
+                "Nesting",
+                "Composing",
+            ]
         },
         {
             name: "GITHUB",
-            describtion: "to work together on projects from anywhere"
-        },
+            describtion: [
+                "add, commit, pull, push",
+                "GitHub Desktop",
+                "work with branches",
+            ]        },
         {
             name: "TYPESCRIPT",
-            describtion: "to extends JavaScript and improves the developer experience"
+            describtion: [
+                "Types",
+                "interface",
+                "Objects",
+                "Functions",
+                "Variables",
+            ]
         },
         {
             name: "NEXT.JS",
-            describtion: "to build full-stack web applications"
-        },
+            describtion: [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ]        },
         {
             name: "REDUX TOOLKIT",
-            describtion: "to write good Redux applications"
-        },
+            describtion: [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ]        },
         {
             name: "REACT ROUTER",
-            describtion: "to handle client and server-side routing in React apps"
-        },
+            describtion: [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ]        },
         {
             name: "REST API",
-            describtion: "lets you interact with any kind of server over HTTP"
-        },
+            describtion: [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ]        },
         {
             name: "LIBRERIES & OTHER",
-            describtion: "Tailwind.css, Chart.js, Material UI, Daisy UI, Bootstrap, npm, Vite"
-        },
+            describtion: [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ]        },
     ]
     return(
         <>
+        <h2 className="mt-[100px] mb-[50px] text-[60px] text-[#DBDBDB] text-center">Skills</h2>
+        <div className="flex gap-[50px] justify-center flex-wrap flex-row mb-[100px]">
             {dataSkills.map((item, index) => (<Skill key={index} item={item} />))}
+        </div>
         </>
+        
     )
 };
