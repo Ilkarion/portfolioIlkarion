@@ -14,6 +14,38 @@
     100% { transform: skew(0deg)  }
 }
 .movingBlocksAnim {
-    transform: skew(10deg);
+    transform: skew(0deg);
     animation: upDown 1s ease infinite;
+}
+
+@keyframes circleAnim {
+    0% {
+        transform: rotate(0deg);
+      }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.circleMove {
+    animation: circleAnim 200s linear infinite;
+}
+
+@keyframes circleAnimMini {
+    0% {
+        transform: rotate(-20deg);
+      }
+    100% {
+        transform: rotate(380deg);
+    }
+}
+.circleMoveMini {
+    animation: circleAnimMini 80s linear infinite;
+}
+
+.colorofullCircleBubble {
+    background-color: transparent;
+    box-shadow: inset 0px 7px 21px -5px #b4a0c7;
 }

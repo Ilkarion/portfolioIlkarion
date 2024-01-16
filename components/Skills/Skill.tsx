@@ -30,14 +30,17 @@ export default function Skill({item}:{item:skillsData}) {
             ${resposiveCardSkil}
             ${hover && stl.movingBlocksAnim}
             text-black
-            bg-[#403549]
+            bg-transparent
+            border-[2px]
+            border-[#9651af]
             rounded-[4px]
             shadow-[0px_10px_15px_0px_#4F326B]
+            max-[500px]:shadow-[0px_2px_5px_0px_#4F326B]
             inline-block`
             }>
 
 
-                <span className={`text-[20px]`}>{item.name}</span>
+                <span className={`max-[430px]:text-[15px] max-[700px]:text-[16px] text-[25px] ${hover ? 'text-[#82af51]' : stl.specialWhiteS}`}>{item.name}</span>
 
 
             </div>
